@@ -29,6 +29,9 @@
 .maincontacto{
     height: 800px;
 }
+.containernosotros{
+    height: 817px;
+}
 .col{
     display: flex;
     overflow: hidden;

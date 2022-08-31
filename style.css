@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     background-color: red;
-    height: 60px;
+    height: 66px;
 }
 .maincontainer{
     height: 800px;
@@ -24,7 +24,11 @@
 .maincontainerproductos{
 
 }
-
+.iconos{
+    display: flex;
+    gap: 20px;
+}
 .copy{
     color: white;
+    
 }

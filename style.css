@@ -1,7 +1,30 @@
 
-#menu a{
-color: rgb(255, 255, 255);
+#menu a {
+    color: rgb(255, 255, 255);
     font-size: 20px;
-    
-    
+
+}
+
+.carousel-inner {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    max-height: 34rem;
+    max-width: 80rem;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    height: 60px;
+}
+.maincontainer{
+    height: 800px;
+}
+.maincontainerproductos{
+
+}
+
+.copy{
+    color: white;
 }

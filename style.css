@@ -26,6 +26,9 @@
 {
     height: 802px;
 }
+.maincontacto{
+    height: 800px;
+}
 .col{
     display: flex;
     overflow: hidden;

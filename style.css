@@ -32,12 +32,21 @@
 .containernosotros{
     height: 817px;
 }
+.containerubicacion{
+    height: 817px;
+}
 .col{
     display: flex;
     overflow: hidden;
     justify-content: center;
     width: 600px;
     height: 500px;
+}
+.ubicacion{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 .cardbody{
     width: 100px;

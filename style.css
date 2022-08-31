@@ -10,19 +10,32 @@
     justify-items: center;
     justify-content: center;
     max-height: 34rem;
-    max-width: 80rem;
+    max-width: 60rem;
 }
 .title {
     display: flex;
     justify-content: center;
     background-color: red;
     height: 66px;
+    
 }
 .maincontainer{
-    height: 800px;
+    height: 817px;
 }
-.maincontainerproductos{
-
+.maincontainerproducto
+{
+    height: 802px;
+}
+.col{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+}
+.cardbody{
+    width: 100px;
+    height: 200px;
 }
 .iconos{
     display: flex;
@@ -30,5 +43,11 @@
 }
 .copy{
     color: white;
+    
+}
+@media (max-width: 650px) {
+    .title{ 
+        font-size: 25px;
+    }
     
 }

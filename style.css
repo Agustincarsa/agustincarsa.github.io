@@ -11,23 +11,26 @@
     justify-content: center;
     max-height: 34rem;
     max-width: 60rem;
+    overflow: hidden;
 }
 .title {
     display: flex;
     justify-content: center;
     background-color: red;
+    color: white;
     height: 66px;
     
 }
 .maincontainer{
-    height: 817px;
+    height: 787px;
 }
 .maincontainerproducto
 {
-    height: 802px;
+    height: 787px;
+    overflow: hidden;
 }
 .maincontacto{
-    height: 800px;
+    height: 771px;
 }
 .containernosotros{
     height: 817px;
@@ -52,7 +55,7 @@ li {
 .container ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
     position: relative;
 
 }
@@ -70,7 +73,7 @@ li {
     background: yellowgreen;
     position: absolute;
     left: 0;
-    bottom: -12px;
+    bottom: -3px;
     transition: 0.4s ease-out;
 }
 

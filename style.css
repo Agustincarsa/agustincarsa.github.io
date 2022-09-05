@@ -42,6 +42,49 @@
     width: 600px;
     height: 500px;
 }
+
+li {
+    list-style-type: none;
+
+
+}
+
+.container ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.container ul li:hover::before {
+    width: 100%;}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    color: beige;
+}
+
+
+
 .ubicacion{
     display: flex;
     justify-items: center;

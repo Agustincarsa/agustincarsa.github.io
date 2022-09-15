@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Colores */
+$colorbg: white;
+$bgtitle: rgb(255, 0, 0);
+$colortitle: white;
+$colorheader: grey;
+$colorfooter: grey;
+$colorfuente: white;
+/* Fuente */
+$fontFamily: 'Times New Roman', Times, serif;
+$fontSize: 20px;
+
+/* Tamaño */
+
+$maxWidth: 100%;
+$halfWidth: 50%;
+
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
+
+font {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+}
+
+
+

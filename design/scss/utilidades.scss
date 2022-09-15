@@ -10,24 +10,28 @@ $colortitle: white;
 $colorheader: grey;
 $colorfooter: grey;
 $colorfuente: white;
+
+
+
 /* Fuente */
 $fontFamily: 'Times New Roman', Times, serif;
 $fontSize: 20px;
+$fuenteTitulo: (
+    "fontSize 30px"
+);
 
-/* Tamaño */
 
-$maxWidth: 100%;
-$halfWidth: 50%;
-
-@mixin sizes($width, $height){
+@mixin sizes($width, $height) {
     height: $height;
     width: $width;
+}
+
+.title {
+    border: 1px;
+    font-size: $fontSize;
 }
 
 font {
     font-size: $fontSize;
     font-family: $fontFamily;
 }
-
-
-

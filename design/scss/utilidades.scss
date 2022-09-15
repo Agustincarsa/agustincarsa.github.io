@@ -20,6 +20,31 @@ $fuenteTitulo: (
     "fontSize 30px"
 );
 
+$estilotitle: (
+    color: red, 
+    centro: center,
+
+);
+
+@each $color,
+$value in $estilotitle {
+    .#{$color} {
+        color: $value;
+    }
+}
+$estilotitle2: (
+    color: rgb(48, 160, 54), 
+    izquierda: left,
+
+);
+
+@each $color,
+$value in $estilotitle2 {
+    .#{$color} {
+        color: $value;
+    }
+}
+
 
 @mixin sizes($width, $height) {
     height: $height;

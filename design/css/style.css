@@ -4,6 +4,18 @@
 
 /* Colores */
 /* Fuente */
+.color {
+  color: red; }
+
+.centro {
+  color: center; }
+
+.color {
+  color: #30a036; }
+
+.izquierda {
+  color: left; }
+
 .title {
   border: 1px;
   font-size: 20px; }
@@ -18,6 +30,18 @@ font {
 
 /* Colores */
 /* Fuente */
+.color {
+  color: red; }
+
+.centro {
+  color: center; }
+
+.color {
+  color: #30a036; }
+
+.izquierda {
+  color: left; }
+
 .title {
   border: 1px;
   font-size: 20px; }
@@ -60,6 +84,18 @@ a {
 
 /* Colores */
 /* Fuente */
+.color {
+  color: red; }
+
+.centro {
+  color: center; }
+
+.color {
+  color: #30a036; }
+
+.izquierda {
+  color: left; }
+
 .title {
   border: 1px;
   font-size: 20px; }
@@ -81,6 +117,18 @@ footer {
 
 /* Colores */
 /* Fuente */
+.color {
+  color: red; }
+
+.centro {
+  color: center; }
+
+.color {
+  color: #30a036; }
+
+.izquierda {
+  color: left; }
+
 .title {
   border: 1px;
   font-size: 20px; }
@@ -95,18 +143,38 @@ main {
   width: auto;
   overflow: hidden; }
 
+.h1, .h1-index, .h1-productos, .h1-ubicacion {
+  font-size: "fontSize 30px";
+  background-color: blue;
+  font-family: "Times New Roman", Times, serif; }
+
 .h1-index {
   display: flex;
+  justify-content: center; }
+
+.h1-productos {
+  display: flex;
+  justify-content: left;
+  background-color: #30a036; }
+
+.h1-ubicacion {
+  display: flex;
   justify-content: center;
-  background-color: red;
-  font-family: "Times New Roman", Times, serif; }
+  background-color: red; }
+
+.h1-nosotros {
+  display: flex;
+  background-color: red; }
+
+.h1-contactos {
+  display: flex;
+  justify-content: center;
+  background-color: red; }
 
 @media screen and (max-width: 768px) {
   .imagenes {
     flex-direction: column;
-    align-items: center; }
-  main {
-    height: 900px; } }
+    align-items: center; } }
 
 * {
   padding: 0px;

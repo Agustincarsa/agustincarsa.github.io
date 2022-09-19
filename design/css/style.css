@@ -137,15 +137,23 @@ font {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif; }
 
+/* Estructura principal */
 main {
   background-color: white;
   height: 777px;
   width: auto;
   overflow: hidden; }
 
+.main-ubicacion {
+  display: flex;
+  justify-content: center;
+  height: 675px;
+  width: auto; }
+
+/* Titulos */
 .h1, .h1-index, .h1-productos, .h1-ubicacion {
   font-size: "fontSize 30px";
-  background-color: blue;
+  background-color: red;
   font-family: "Times New Roman", Times, serif; }
 
 .h1-index {
@@ -154,8 +162,8 @@ main {
 
 .h1-productos {
   display: flex;
-  justify-content: left;
-  background-color: #30a036; }
+  justify-content: center;
+  background-color: red; }
 
 .h1-ubicacion {
   display: flex;
@@ -164,6 +172,7 @@ main {
 
 .h1-nosotros {
   display: flex;
+  justify-content: center;
   background-color: red; }
 
 .h1-contactos {
@@ -171,6 +180,7 @@ main {
   justify-content: center;
   background-color: red; }
 
+/* MediasQ */
 @media screen and (max-width: 768px) {
   .imagenes {
     flex-direction: column;

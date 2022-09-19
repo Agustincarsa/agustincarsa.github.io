@@ -1,15 +1,21 @@
 @import "utilidades.scss";
 
+/* Estructura principal */
 main {
     background-color: $colorbg;
     @include sizes(auto, 777px);
     overflow: hidden;
+}
+.main-ubicacion{
+    display: flex;
+    justify-content: center;
+    @include sizes(auto, 675px);
 
 }
-
+/* Titulos */
 .h1 {
     font-size: $fuenteTitulo;
-    background-color: blue;
+    background-color: rgb(255, 0, 0);
     font-family: $fontFamily;
 
 }
@@ -24,8 +30,8 @@ main {
 .h1-productos {
     @extend .h1;
     display: flex;
-    justify-content: map-get($map: $estilotitle2, $key: izquierda);
-    background-color: map-get($map: $estilotitle2, $key: color);
+    justify-content: map-get($map: $estilotitle, $key: centro);
+    background-color: map-get($map: $estilotitle, $key: color);
     
 }
 
@@ -38,7 +44,7 @@ main {
 
 .h1-nosotros {
     display: flex;
-    justify-content: map-get($map: $estilotitle, $key: izquierda);
+    justify-content: map-get($map: $estilotitle, $key: centro);
     background-color: map-get($map: $estilotitle, $key: color);
 
 }
@@ -50,7 +56,7 @@ main {
 }
 
 
-
+/* MediasQ */
 @media screen and (max-width: 768px) {
 
     .imagenes {

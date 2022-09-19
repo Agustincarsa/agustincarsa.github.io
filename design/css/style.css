@@ -144,6 +144,10 @@ main {
   width: auto;
   overflow: hidden; }
 
+.main-container {
+  display: flex;
+  justify-content: center; }
+
 .main-ubicacion {
   display: flex;
   justify-content: center;
@@ -180,11 +184,22 @@ main {
   justify-content: center;
   background-color: red; }
 
+#carousel {
+  display: flex;
+  width: 1920x;
+  height: 500px;
+  overflow: hidden; }
+
 /* MediasQ */
 @media screen and (max-width: 768px) {
   .imagenes {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .carousel-item {
+    width: 600px; }
+  #carousel {
+    max-width: 600px;
+    max-height: 600px; } }
 
 * {
   padding: 0px;

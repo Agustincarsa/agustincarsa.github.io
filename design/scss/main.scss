@@ -6,12 +6,17 @@ main {
     @include sizes(auto, 777px);
     overflow: hidden;
 }
-.main-ubicacion{
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+.main-ubicacion {
     display: flex;
     justify-content: center;
     @include sizes(auto, 675px);
 
 }
+
 /* Titulos */
 .h1 {
     font-size: $fuenteTitulo;
@@ -24,7 +29,7 @@ main {
     @extend .h1;
     display: flex;
     justify-content: map-get($map: $estilotitle, $key: centro);
-    
+
 }
 
 .h1-productos {
@@ -32,7 +37,7 @@ main {
     display: flex;
     justify-content: map-get($map: $estilotitle, $key: centro);
     background-color: map-get($map: $estilotitle, $key: color);
-    
+
 }
 
 .h1-ubicacion {
@@ -55,6 +60,13 @@ main {
     background-color: map-get($map: $estilotitle, $key: color);
 }
 
+#carousel {
+    display: flex;
+    width: 1920x;
+    height: 500px;
+    overflow: hidden;
+
+}
 
 /* MediasQ */
 @media screen and (max-width: 768px) {
@@ -64,6 +76,12 @@ main {
         align-items: center;
 
     }
+.carousel-item {
+    width: 600px;
 
-    main {}
+}
+    #carousel{
+        max-width: 600px;
+        max-height: 600px;
+    }
 }

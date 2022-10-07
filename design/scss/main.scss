@@ -4,12 +4,14 @@
 main {
     background-color: $colorbg;
     @include sizes(auto, 777px);
-    overflow: hidden;
+
 }
-.main-container{
+
+.main-container {
     display: flex;
     justify-content: center;
 }
+
 .main-ubicacion {
     display: flex;
     justify-content: center;
@@ -17,6 +19,124 @@ main {
 
 }
 
+.containerproducto {
+    padding: 50px;
+    margin: 10px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-gap: 10px;
+    
+
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "carrito1 descripción foto1"
+        "carrito2 descripción2 foto2"
+        "carrito3 descripción3 foto3"
+        "carrito4 descripción4 foto4"
+        "carrito5 descripción5 foto5";
+    width: 90%;
+}
+
+.descripción,
+.descripción2,
+.descripción3,
+.descripción4,
+.descripción5 {
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    overflow: auto;
+}
+
+.descripción {
+    grid-area: descripción;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+
+}
+
+.descripción2 {
+    grid-area: descripción2;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}
+
+.descripción3 {
+    grid-area: descripción3;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}
+
+.descripción4 {
+    grid-area: descripción4;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}
+
+.descripción5 {
+    grid-area: descripción5;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}
+
+.carrito1 {
+    grid-area: carrito1;
+    background-color: white;
+
+}
+
+.carrito2 {
+    grid-area: carrito2;
+    background-color: white;
+}
+
+.carrito3 {
+    grid-area: carrito3;
+    background-color: white;
+}
+
+.carrito4 {
+    grid-area: carrito4;
+    background-color: white;
+}
+
+.carrito5 {
+    grid-area: carrito5;
+    background-color: white;
+}
+
+.foto1 {
+    grid-area: foto1;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.foto2 {
+    grid-area: foto2;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.foto3 {
+    grid-area: foto3;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.foto4 {
+    grid-area: foto4;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.foto5 {
+    grid-area: foto5;
+    max-height: 300px;
+    max-width: 300px;
+}
 
 /* Titulos */
 .h1 {
@@ -69,6 +189,8 @@ main {
 
 }
 
+
+
 /* MediasQ */
 @media screen and (max-width: 768px) {
 
@@ -77,12 +199,42 @@ main {
         align-items: center;
 
     }
-.carousel-item {
-    width: 600px;
+    
 
-}
-    #carousel{
+    .carousel-item {
+        width: 600px;
+
+    }
+
+    #carousel {
         max-width: 600px;
         max-height: 600px;
+    }
+    .containerproducto {
+        padding: 1px;
+        margin: 1px;
+        margin-left: 15px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 2% 73% 25%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-gap: 5px;
+        
+    
+        justify-content: left;
+        grid-template-areas:
+            "carrito1 descripción foto1"
+            "carrito2 descripción2 foto2"
+            "carrito3 descripción3 foto3"
+            "carrito4 descripción4 foto4"
+            "carrito5 descripción5 foto5";
+        width: 90%;
+    }
+    .descripción, .descripción2, .descripción3, .descripción4, .descripción5{
+        font-size: 15px;
+    }
+    .foto1, .foto2, .foto3, .foto4, .foto5{
+        width: 250px;
+        height: 250px;
     }
 }

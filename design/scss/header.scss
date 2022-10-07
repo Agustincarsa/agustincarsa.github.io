@@ -38,12 +38,12 @@ header ul li a {
 
 header ul li::before {
     content: "";
-    height: 3px;
+    height: 2px;
     width: 0%;
     background: yellowgreen;
     position: absolute;
     left: 0;
-    bottom: -12px;
+    bottom: -2px;
     transition: 0.4s ease-out;
 }
 

@@ -36,6 +36,7 @@
     "binary-extensions": "^2.2.0",
     "brace-expansion": "^1.1.11",
     "braces": "^3.0.2",
+    "build-css": "^0.2.0",
     "cacache": "^15.3.0",
     "camelcase": "^5.3.1",
     "camelcase-keys": "^6.2.2",
